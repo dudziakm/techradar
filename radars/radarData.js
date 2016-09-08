@@ -1,5 +1,5 @@
 //This is the title for your window tab, and your Radar
-document.title = "British Council's Technology Radar for Quality Assurance (September 2016)";
+document.title = "Technology Radar for Quality Assurance (September 2016)";
 
 
 //This is the concentic circles that want on your radar
@@ -54,27 +54,23 @@ var radar_data = [
         "top" : 18,
         "color" : "#8FA227",
         "items" : [ 
-		//Use
-			{"name":"Pair Testing", "pc":{"r":170,"t":150},"movement":"c"},   
-            {"name":"Pairing Tester + Developer", "pc":{"r":130,"t":170},"movement":"c"}, 
-            {"name":"iOS Accessibility", "pc":{"r":170,"t":110},"movement":"c"},
-            {"name":"Single Page App", "pc":{"r":150,"t":95},"movement":"c", "url":"http://www.google.com"},
-            {"name":"iOS Adaptivity", "pc":{"r":180,"t":105},"movement":"c"},   
-            {"name":"Build Pipelines", "pc":{"r":180,"t":100},"movement":"c"},   
 		
-		//Assess:
-            { name: 'Git flow / Pull Requests ^', pc: { r: 230, t: 133 }, movement: 'c' },
-            {"name":"Incremental data warehousing", "pc":{"r":250,"t":165},"movement":"c"},    
-            {"name":"Events for messages - CQRS", "pc":{"r":225,"t":120},"movement":"c"},
-            {"name":"Measure Pipeline disruptions", "pc":{"r":280,"t":110},"movement":"c"}, 
-            {"name":"Continuous Experimentation", "pc":{"r":230,"t":110},"movement":"c"},
-            { name: 'Reduce iRules dependence ^', pc: { r: 280, t: 133 }, movement: 'c' },
+		//Use
+			{"name":"Pair Testing", "pc":{"r":170,"t":150},"movement":"c"},
+            {"name":"Page Object", "pc":{"r":130,"t":170},"movement":"c"},
+            {"name":"Code Review", "pc":{"r":170,"t":115},"movement":"c"},
+            {"name":"Automation Tests for Bugs", "pc":{"r":150,"t":95},"movement":"c", "url":"http://www.google.com"},
+            {"name":"Automation Tests for Stories", "pc":{"r":180,"t":105},"movement":"c"},
+			{"name":"API testing", "pc":{"r":140,"t":125},"movement":"c"},
+		
+		//Assess:            
+            {"name":"Pairing QA + DEV", "pc":{"r":250,"t":165},"movement":"c"},    
+            {"name":"Community of Practice", "pc":{"r":225,"t":120},"movement":"c"},
+            {"name":"Testing Dojo", "pc":{"r":280,"t":110},"movement":"c"}, 
             
 		//Remove:
             {"name":"Only Manual testing approach", "pc":{"r":330,"t":110},"movement":"c"},
-            {"name":"Polygot Programming", "pc":{"r":330,"t":140},"movement":"c"},
-            {"name":"Coding architects", "pc":{"r":330,"t":170},"movement":"c"}
-
+            {"name":"Manual Scenarios", "pc":{"r":330,"t":140},"movement":"c"},            
         ]
     },
     { "quadrant": "Tools",
@@ -82,24 +78,26 @@ var radar_data = [
         "top" : 18,
         "color" : "#587486",
         "items" : [ 
+		//Use
+		  { name: 'Visual Studio 2015', pc: { r: 170, t: 19 }, movement: 'c' },
+		  { name: 'Git Kraken',    pc: { r: 150, t: 40 },    movement: 'c' },
+		  { name: 'ReSharper',    pc: { r: 110, t: 50 },    movement: 'c'}, 
+		  { name: 'TeamCity',    pc: { r: 150, t: 60 },    movement: 'c' },
+		  { name: 'VSO',    pc: { r: 110, t: 70 },    movement: 'c' }, 
+		
+		//Assess:      
+		  { name: 'Enterprise Architect',    pc: { r: 280, t: 64 },    movement: 'c' },  
+		  { name: 'Microsoft Test Manager',    pc: { r: 280, t: 74 },    movement: 'c' },
+		  { name: 'Trello',    pc: { r: 260, t: 85 },    movement: 'c' },
+		  { name: 'JMeter',    pc: { r: 260, t: 48 },    movement: 'c' },
+		  { name: 'SoapUI', pc: { r: 280, t: 40 }, movement: 'c' },
+		  { name: 'HP QC',    pc: { r: 280, t: 25 },    movement: 'c' },		  
 
-{ name: 'Docker', pc: { r: 170, t: 19 }, movement: 't' },
-  { name: 'bind',    pc: { r: 150, t: 69 },    movement: 'c' },
-  { name: 'Appium',    pc: { r: 110, t: 70 },    movement: 'c',    domain: 'mobile, front-end' }, 
-
-
-  { name: 'Ansible',    pc: { r: 280, t: 74 },    movement: 'c' },  
-  { name: 'Hip Chat',    pc: { r: 280, t: 78 },    movement: 'c' },
-  { name: 'Trello',    pc: { r: 260, t: 75 },    movement: 'c' },
-  { name: 'Charles HTTP Proxy',    pc: { r: 260, t: 48 },    movement: 'c' },
-  { name: 'Xamarin', pc: { r: 280, t: 51 }, movement: 'c' },
-  { name: 'Android Annotations',    pc: { r: 280, t: 25 },    movement: 'c' },
-  { name: 'GenyMotion',    pc: { r: 210, t: 31 },    movement: 'c' },
-
-  { name: 'AppManager ^',    pc: { r: 360, t: 82 },    movement: 'c' },
-  { name: 'Hibernate ^',    pc: { r: 380, t: 56 },    movement: 'c' },
-  { name: 'mongoDB',    pc: { r: 330, t: 5 },    movement: 'c' }, 
-  { name: 'Subversion',    pc: { r: 330, t: 18 },    movement: 'c' }
+    	//Remove:
+		//  { name: 'AppManager ',    pc: { r: 360, t: 82 },    movement: 'c' },
+		//  { name: 'Hibernate ',    pc: { r: 380, t: 56 },    movement: 'c' },
+		//  { name: 'mongoDB',    pc: { r: 330, t: 5 },    movement: 'c' }, 
+		//  { name: 'Subversion',    pc: { r: 330, t: 18 },    movement: 'c' }
   ]
     },
     { "quadrant": "Languages",
@@ -110,12 +108,11 @@ var radar_data = [
 		//Use
             {"name":"C#", "pc":{"r":130,"t":200},"movement":"c"},   
             {"name":"TypeScript", "pc":{"r":130,"t":220},"movement":"c"},
-            {"name":"JavaScript", "pc":{"r":130,"t":240},"movement":"c"},
-            			
+            
 		//Assess
-            { name: 'Mesos',              pc: { r: 260, t: 265 },              movement: 't' },
-            { name: 'Marathon',              pc: { r: 240, t: 268 },              movement: 't' },
-            { name: 'Kubernetes',              pc: { r: 270, t: 236 },              movement: 't' },            
+            { name: 'JavaScript',              pc: { r: 260, t: 265 },              movement: 'c' },
+         //   { name: 'Marathon',              pc: { r: 240, t: 268 },              movement: 't' },
+         //   { name: 'Kubernetes',              pc: { r: 270, t: 236 },              movement: 't' },            
             		
 		//Remove
 			{"name":"Java", "pc":{"r":340,"t":200},"movement":"c"}
@@ -126,22 +123,19 @@ var radar_data = [
         "left"  : (w-200+30),
         "top" :   (h/2 + 18),
         "items" : [ 
-            { name: 'CDI', pc: { r: 60, t: 290 },  movement: 'c' },
-            { name: 'Jersey', pc: { r: 60, t: 310 },  movement: 'c' },
-
-            { name: 'Guice', pc: { r: 60, t: 278 },  movement: 'c' },
-            { name: 'RxJava', pc: { r: 150, t: 298 },              movement: 'c',  domain: 'template' },          
-
-            {"name":"Java 8", "pc":{"r":130,"t":355},"movement":"c"},   
-            {"name":"Groovy ^", "pc":{"r":190,"t":280},"movement":"c"},
-
-            {"name":"Swift", "pc":{"r":280,"t":300},"movement":"c"},
-            { name: 'Web Components', pc: { r: 260, t: 330 },  movement: 'c' },
-			
-			{ name: 'AppManager ^',    pc: { r: 360, t: 300 },    movement: 'c' },
-			{ name: 'Hibernate ^',    pc: { r: 380, t: 310 },    movement: 'c' },
-			{ name: 'mongoDB',    pc: { r: 330, t: 320 },    movement: 'c' }, 
-			{ name: 'Subversion',    pc: { r: 330, t: 330 },    movement: 'c' }
+		//Use
+            { name: 'Protractor', pc: { r: 100, t: 300 },  movement: 'c' },
+            { name: 'NUnit', pc: { r: 100, t: 320 },  movement: 'c' },
+            { name: 'Selenium Webdriver', pc: { r: 100, t: 280 },  movement: 'c' },
+        //Assess
+            {"name":"Jasmine", "pc":{"r":280,"t":300},"movement":"c"},
+            { name: 'OWIN', pc: { r: 260, t: 330 },  movement: 'c' },
+		
+		//Remove
+			{ name: 'Microsoft UnitTesting',    pc: { r: 360, t: 300 },    movement: 'c' },
+			//{ name: 'Hibernate ^',    pc: { r: 380, t: 310 },    movement: 'c' },
+			//{ name: 'mongoDB',    pc: { r: 330, t: 320 },    movement: 'c' }, 
+			//{ name: 'Subversion',    pc: { r: 330, t: 330 },    movement: 'c' }
         ]
     }
 ];
